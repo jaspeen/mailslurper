@@ -122,7 +122,7 @@ func (config *Configuration) GetPublicServiceURL() string {
 
 	result := "http"
 
-	if config.CertFile != "" && config.KeyFile != "" {
+	if config.AdminCertFile != "" && config.AdminKeyFile != "" {
 		result += "s"
 	}
 
